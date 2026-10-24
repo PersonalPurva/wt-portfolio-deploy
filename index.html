@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purva Kadam | Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">Purva<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+    <nav id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <p class="hello">Hello, I am</p>
+    <h1>Purva Kadam</h1>
+    <p class="role">S.Y. B.Tech Computer Engineering Student &middot; Web Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a Computer Engineering student at JSPM's Rajarshi Shahu College of Engineering, Pune.
+       I enjoy building responsive websites and web applications using HTML, CSS, JavaScript,
+       Node.js and PHP. This portfolio is deployed on GitHub Pages as part of my Web Technology lab.</p>
+</section>
+
+<section id="skills" class="section alt">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>HTML5</span><span>CSS3</span><span>Bootstrap 5</span><span>JavaScript</span>
+        <span>DOM</span><span>PHP</span><span>MySQL</span><span>Node.js</span>
+        <span>Express.js</span><span>Git &amp; GitHub</span>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <!-- Project cards are loaded from projects.json using fetch() -->
+    <div id="projectList" class="cards"><p class="loading">Loading projects...</p></div>
+</section>
+
+<section id="contact" class="section alt">
+    <h2>Contact</h2>
+    <form id="contactForm" novalidate>
+        <input type="text" id="cName" placeholder="Your name">
+        <input type="email" id="cEmail" placeholder="Your email">
+        <textarea id="cMsg" rows="4" placeholder="Your message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formStatus"></p>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Purva Kadam &middot; Hosted on GitHub Pages</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

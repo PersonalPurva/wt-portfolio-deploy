@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #2d2d2d;
+    line-height: 1.6;
+}
+
+/* ---------- Navigation ---------- */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: #0f172a;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.hello {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.role {
+    color: #cbd5e1;
+    margin: 10px 0 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ---------- Sections ---------- */
+.section {
+    padding: 60px 8%;
+}
+
+.section.alt {
+    background: #f1f5f9;
+}
+
+.section h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.skills span {
+    display: inline-block;
+    padding: 8px 18px;
+    margin: 6px;
+    background: #fff;
+    border: 2px solid #38bdf8;
+    border-radius: 20px;
+}
+
+/* CSS Grid for project cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #38bdf8;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card .tech {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.error-box {
+    padding: 15px;
+    background: #fee2e2;
+    color: #991b1b;
+    border-radius: 8px;
+}
+
+/* ---------- Contact form ---------- */
+form {
+    max-width: 550px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+#formStatus {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: #94a3b8;
+}
+
+/* ---------- Responsive (Media Queries) ---------- */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #0f172a;
+        padding: 10px 0;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px 8%;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Spice Garden Restaurant",
+    "description": "Responsive restaurant website with a navigation bar, menu cards and footer.",
+    "tech": "HTML5, CSS3, Bootstrap 5"
+  },
+  {
+    "title": "Smart To-Do List",
+    "description": "Add, complete, filter and delete tasks using JavaScript DOM manipulation.",
+    "tech": "HTML, CSS, JavaScript, localStorage"
+  },
+  {
+    "title": "Registration Form Validation",
+    "description": "Email, mobile and password strength validation with dynamic error messages.",
+    "tech": "HTML, CSS, JavaScript, RegEx"
+  },
+  {
+    "title": "PHP Feedback System",
+    "description": "Feedback form with server-side validation that stores data in MySQL.",
+    "tech": "PHP, MySQL"
+  },
+  {
+    "title": "Express Form Server",
+    "description": "Node.js server that stores form data in a JSON file with 404 and 500 handling.",
+    "tech": "Node.js, Express.js"
+  },
+  {
+    "title": "EventHub - Event Booking",
+    "description": "Mini project: book event tickets, view and cancel bookings through a REST API.",
+    "tech": "Node.js, Express, Bootstrap, Fetch API"
+  }
+]
